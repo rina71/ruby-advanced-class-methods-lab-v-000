@@ -64,7 +64,10 @@ class Song
 
   def self.create_from_filename(song)
     self.new_from_filename(song).save
+  end
 
+  def self.destroy_all
+    @all.clear
 
   end
 end
